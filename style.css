@@ -128,7 +128,6 @@ section.topo-do-site .flex {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
-
 @keyframes flutuar {
     0% {
         top: 0;
@@ -138,6 +137,36 @@ section.topo-do-site .flex {
         top: 30px;
     }
 }
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+        width: 800px;
+        height: 460px;
+    }
+    25% {
+        transform: scale(1.05);
+        width: 840px;
+        height: 483px;
+    }
+    50% {
+        transform: scale(1.1);
+        width: 880px;
+        height: 506px;
+    }
+    75% {
+        transform: scale(1.05);
+        width: 840px;
+        height: 483px;
+    }
+    100% {
+        transform: scale(1);
+        width: 800px;
+        height: 460px;
+    }
+}
+
+
 
 /* ESTILOS DAS ESPECIALIDADES */
 section.especialidades {
@@ -246,6 +275,19 @@ section.portifolio {
     border-radius: 40px;
     position: relative;
 }
+.img-port2 {
+    width: 360px;
+    height: 460px;
+    background-color: #00ff08;
+    background-size: cover;
+    background-position: center;
+
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
 
 section.portifolio .flex {
     justify-content: space-around;
@@ -254,6 +296,9 @@ section.portifolio .flex {
 
 .img-port:hover {
     background-position: 100% 100%;
+}
+.img-port2:hover {
+    animation: zoom 5s ease-in-out infinite alternate;
 }
 
 .overlay {
@@ -476,8 +521,13 @@ footer .line-footer p a {
         width: 100%;
         max-width: 1360px;
         margin: 0 auto;
-
     }
+    .img-port2 {
+        width: 100%;
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+
 
     section.portifolio .flex {
         gap: 60px;
