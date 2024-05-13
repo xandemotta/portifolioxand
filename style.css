@@ -177,6 +177,28 @@ section.especialidades .flex {
     gap: 60px;
 }
 @media screen and (min-width: 1020px) {
+    .img-port2:hover {
+        animation: zoom 5s ease-in-out infinite alternate;
+    }
+    
+    .img-port2 {
+        width: 100%;
+        max-width: 1360px;
+        margin: 0 auto;
+    }
+
+    .img-port2 {
+        width: 360px;
+        height: 460px;
+        background-color: #00ff08;
+        background-size: cover;
+        background-position: center;
+    
+        cursor: pointer;
+        border-radius: 40px;
+        position: relative;
+        margin: 0 auto; /* Centraliza horizontalmente */
+    }
     .especialidades-box {
         width: 30%; /* Defina o tamanho desejado */
         padding: 20px; /* Adicione um espaçamento interno */
@@ -280,13 +302,13 @@ section.portifolio {
     height: 460px;
     background-color: #00ff08;
     background-size: cover;
-    background-position: center;
-
+    background-position: 100% 0%;
+    transition: 8s;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
-    margin: 0 auto; /* Centraliza horizontalmente */
 }
+
 
 
 section.portifolio .flex {
@@ -298,7 +320,7 @@ section.portifolio .flex {
     background-position: 100% 100%;
 }
 .img-port2:hover {
-    animation: zoom 5s ease-in-out infinite alternate;
+    animation: zoom 5s infinite alternate;
 }
 
 .overlay {
