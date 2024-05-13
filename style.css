@@ -147,6 +147,16 @@ section.especialidades {
 section.especialidades .flex {
     gap: 60px;
 }
+@media screen and (min-width: 1020px) {
+    .especialidades-box {
+        width: 30%; /* Defina o tamanho desejado */
+        padding: 20px; /* Adicione um espaçamento interno */
+        text-align: center; /* Centralize o conteúdo */
+        box-sizing: border-box; /* Inclua o padding no tamanho total */
+        display: inline-block; /* Para que os boxes fiquem lado a lado */
+    }
+        
+}
 
 .especialidades .especialidades-box {
     color: #fff;
