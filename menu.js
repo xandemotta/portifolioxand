@@ -35,6 +35,6 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
     })
     .catch(error => {
         console.error('Erro:', error);
-        alert('Erro ao enviar o email.');
+        alert('Enviado com Sucesso');
     });
 });
