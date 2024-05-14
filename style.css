@@ -301,8 +301,8 @@ section.portifolio {
     width: 360px;
     height: 460px;
     background-color: #00ff08;
-    background-size: cover;
-    background-position: 100% 0%;
+    background-size: auto;
+    background-position: center center;
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
@@ -320,7 +320,7 @@ section.portifolio .flex {
     background-position: 100% 100%;
 }
 .img-port2:hover {
-    animation: zoom 5s infinite alternate;
+    animation: zoom 5s alternate-reverse;
 }
 
 .overlay {
