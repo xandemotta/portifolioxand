@@ -177,28 +177,7 @@ section.especialidades .flex {
     gap: 60px;
 }
 @media screen and (min-width: 1020px) {
-    .img-port2:hover {
-        animation: zoom 5s ease-in-out infinite alternate;
-    }
-    
-    .img-port2 {
-        width: 100%;
-        max-width: 1360px;
-        margin: 0 auto;
-    }
 
-    .img-port2 {
-        width: 360px;
-        height: 460px;
-        background-color: #00ff08;
-        background-size: cover;
-        background-position: center;
-    
-        cursor: pointer;
-        border-radius: 40px;
-        position: relative;
-        margin: 0 auto; /* Centraliza horizontalmente */
-    }
     .especialidades-box {
         width: 30%; /* Defina o tamanho desejado */
         padding: 20px; /* Adicione um espaçamento interno */
@@ -297,12 +276,12 @@ section.portifolio {
     border-radius: 40px;
     position: relative;
 }
-.img-port2 {
+.img-port3 {
     width: 360px;
     height: 460px;
     background-color: #00ff08;
     background-size: auto;
-    background-position: center center;
+    background-position: center;
     transition: 8s;
     cursor: pointer;
     border-radius: 40px;
@@ -319,9 +298,10 @@ section.portifolio .flex {
 .img-port:hover {
     background-position: 100% 100%;
 }
-.img-port2:hover {
-    animation: zoom 5s alternate-reverse;
+.img-port3:hover {
+    background-position: -100% 100%;
 }
+
 
 .overlay {
     position: absolute;
@@ -544,7 +524,7 @@ footer .line-footer p a {
         max-width: 1360px;
         margin: 0 auto;
     }
-    .img-port2 {
+    .img-port3 {
         width: 100%;
         max-width: 1360px;
         margin: 0 auto;
