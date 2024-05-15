@@ -35,6 +35,6 @@ document.getElementById('emailForm').addEventListener('submit', function(event) 
     })
     .catch(error => {
         console.error('Erro:', error);
-        alert('Enviado com Sucesso');
+        alert('Fale comigo agora mesmo pelo botão contato no inicio da página');
     });
 });
