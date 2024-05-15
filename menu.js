@@ -55,6 +55,14 @@ function scrollFunction() {
 
 // Ao clicar no botão, a página é movida para o topo
 function topFunction() {
-    document.body.scrollTop = 0; // Para navegadores da Safari
-    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    // Retorna suavemente ao topo da página
+    // O intervalo de tempo define a suavidade do retorno (quanto menor, mais suave)
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 20); // Altere o valor 8 para ajustar a velocidade do retorno
+        }
+    };
+    scrollToTop();
 }
