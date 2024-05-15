@@ -384,7 +384,7 @@ footer {
 }
 
 footer .logo-footer img {
-    width: 300px;
+    width: 150px;
 }
 
 footer .flex {
@@ -562,3 +562,26 @@ footer .line-footer p a {
 
 
 /* SOBRE */
+
+/* FOOTER */
+/* Estilizando o botão */
+#myBtn {
+    display: none; /* Esconde o botão por padrão */
+    position: fixed; /* Fixa o botão na tela */
+    bottom: 20px; /* Distância do botão em relação ao bottom da tela */
+    right: 30px; /* Distância do botão em relação ao right da tela */
+    z-index: 99; /* Z-index para garantir que o botão esteja acima de outros elementos */
+    font-size: 18px; /* Tamanho da fonte do botão */
+    border: none; /* Remove a borda do botão */
+    outline: none; /* Remove o outline do botão */
+    background-color: #555; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Cursor ao passar por cima do botão */
+    padding: 15px; /* Espaçamento interno do botão */
+    border-radius: 4px; /* Borda arredondada */
+}
+
+/* Estilizando o botão ao passar o mouse */
+#myBtn:hover {
+    background-color: #777; /* Altera a cor de fundo ao passar o mouse */
+}
